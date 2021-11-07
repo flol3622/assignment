@@ -3,6 +3,6 @@ import Button from '@mui/material/Button';
 
 export default function BasicButtons() {
   return (
-      <Button variant="text" href="#footer">Text</Button>
+      <Button variant="text">Text</Button>
   );
 }

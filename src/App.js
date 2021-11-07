@@ -4,6 +4,8 @@ import LabelBottomNavigation from './components/LabelBottomNavigation'
 import BasicSpeedDial from './components/BasicSpeedDial';
 import Footer from './components/Footer';
 import FooterArrow from './components/FooterArrow';
+
+import ScrollIntoView from 'react-scroll-into-view'
 import './App.css';
 
 
@@ -17,7 +19,7 @@ function App() {
         <Route path="/nearby" element={<Nearby/>}/>
         <Route path="/favorite" element={<Favorite/>}/>
       </Routes>
-      <FooterArrow/>
+      <ScrollIntoView selector="#footer"><FooterArrow/></ScrollIntoView>
       <LabelBottomNavigation/>
       <Footer/>
     </BrowserRouter>
