@@ -11,7 +11,8 @@ export default function Footer() {
         position: 'absolute',
         top: '100vh',
         mt: 0
-        }}>
+        }}
+        id="footer">
 
       <p>test</p>
     </Box>

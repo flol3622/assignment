@@ -1,18 +1,8 @@
 import * as React from 'react';
-import IconButton from '@mui/material/IconButton';
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import Button from '@mui/material/Button';
 
-export default function FooterArrow() {
+export default function BasicButtons() {
   return (
-    <div onClick={() => { window.scrollTo({top: document.documentElement.scrollHeight, behavior: 'smooth' })}}>
-
-        <IconButton 
-            aria-label="delete" 
-            disabled color="primary">
-          
-            <KeyboardArrowDownIcon />
-        </IconButton>
-    </div>
-
+      <Button variant="text" href="#footer">Text</Button>
   );
 }
