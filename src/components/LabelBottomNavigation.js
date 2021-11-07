@@ -7,6 +7,9 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import HomeIcon from '@mui/icons-material/Home';
 import {Link as RouterLink} from 'react-router-dom';
 
+import FooterArrow from './FooterArrow';
+import ScrollIntoView from 'react-scroll-into-view'
+
 
 export default function LabelBottomNavigation() {
   const [value, setValue] = React.useState('home');
@@ -20,7 +23,7 @@ export default function LabelBottomNavigation() {
       sx={{ position: 'absolute', 
       right: '25vw', 
       left: '25vw', 
-      bottom: 0,
+      bottom: -5,
       mb: 0,
       }} 
 
@@ -36,7 +39,7 @@ export default function LabelBottomNavigation() {
         value="recents"
         icon={<RestoreIcon />}
       />
-      <BottomNavigationAction/>
+      <ScrollIntoView selector="#footer"><FooterArrow/></ScrollIntoView>
 
       <BottomNavigationAction component={RouterLink} to="/favorite"
         label="Favorites"

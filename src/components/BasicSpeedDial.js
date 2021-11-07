@@ -19,8 +19,10 @@ export default function BasicSpeedDial() {
   return (
     <Box sx={{ height: 320, transform: 'translateZ(0px)', flexGrow: 1, display: 'inline'}}>
       <SpeedDial
-        ariaLabel="SpeedDial basic example"
+        FabProps={{ size: "small", style: { backgroundColor: "grey" }}}
+        ariaLabel=""
         direction='down'
+        color='brown'
         sx={{ position: 'absolute', top: 16, right: 16}}
         icon={<MenuIcon/>}
       >
