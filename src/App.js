@@ -4,8 +4,6 @@ import LabelBottomNavigation from './components/LabelBottomNavigation'
 import BasicSpeedDial from './components/BasicSpeedDial';
 import Footer from './components/Footer';
 
-
-
 import './App.css';
 
 
