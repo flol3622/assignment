@@ -4,10 +4,10 @@ import { Grid, Typography } from '@mui/material'
 function MyColumn(props) {
     return (
         <Grid item sx={{width:'30%'}}>
-            <Grid container spacing={2} justifyContent="center">
+            <Grid container spacing={2} alignItems='end' justifyContent="center" sx={{height: '100%'}}>
                 {props.children}
             </Grid>         
-            <Typography> {props.titel}</Typography> 
+            <Typography> {props.titel}</Typography>                 
         </Grid>
 
 

@@ -6,8 +6,7 @@ import MyColumn from '../components/grid/MyColumn';
 const Home = () => {
     return (
         <div>
-            <p>I am the home page</p>
-            <Grid container spacing={2} justifyContent="center" sx={{position: 'absolute', bottom:60}}>
+            <Grid container spacing={2} justifyContent="center" sx={{position: 'absolute', bottom:80}}>
                 <MyColumn titel='eertste kolom'>
                     <MyCard></MyCard>
                     <MyCard></MyCard>

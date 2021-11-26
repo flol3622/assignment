@@ -4,7 +4,7 @@ import { Card, CardContent, Grid, Typography } from '@mui/material'
 function MyCard(props) {
     return (
         <Grid item>
-            <Card sx={{ height: 100, width: 100}}>
+            <Card sx={{ height: 100, width: 100}} variant="outlined">
                 <CardContent>
                     <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
                         {props.children}
