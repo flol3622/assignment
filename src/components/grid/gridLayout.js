@@ -4,7 +4,7 @@ var posts = [
     link: 'https://www.instagram.com/p/CV0ils5KKCH/embed',
     title: 'NIGHTSTAND',
     thumbnail: '/thumbnails/Flupke/nightstand.jpg',
-    year: '2021',
+    year: '2020',
     category: 'woodworking'
   },
   {
@@ -18,7 +18,7 @@ var posts = [
     link: 'https://www.instagram.com/p/CVs_XTZoRCR/embed',
     title: 'REMOTE 2',
     thumbnail: '/thumbnails/Flupke/remote.jpg',
-    year: '2022',
+    year: '2020',
     category: '3D printing'
   },
 ];

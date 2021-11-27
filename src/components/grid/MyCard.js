@@ -35,7 +35,7 @@ function MyCard(props) {
                             border: '',
                             borderRadius: '25',
                             height: '90%',
-                            width: '70%'
+                            maxWidth: '500px'
                     }}/>
                 </Backdrop>
             </Card>
