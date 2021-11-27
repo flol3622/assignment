@@ -3,6 +3,7 @@ import {Home, Recent, Nearby, Favorite} from './pages'
 import LabelBottomNavigation from './components/LabelBottomNavigation'
 import BasicSpeedDial from './components/BasicSpeedDial';
 import Footer from './components/Footer';
+import React from 'react';
 
 import './App.css';
 
