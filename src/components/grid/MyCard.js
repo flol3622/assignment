@@ -14,11 +14,11 @@ function MyCard(props) {
 
     return (
         <Grid item>
-            <Card sx={{ height: 60, width: 60}} variant="outlined">
+            <Card sx={{ height: 70, width: 70}} variant="outlined">
                 <CardActionArea onClick={handleToggle}>
                     <CardMedia
                         component="img"
-                        height="60"
+                        height="70"
                         image={props.thumbnail}
                         alt={props.thumbnail}
                     />
@@ -32,15 +32,15 @@ function MyCard(props) {
                         component= 'iframe'
                         src= {props.link}
                         sx={{
-                            border: '',
-                            borderRadius: '25',
+                            border: 'none',
+                            borderRadius: '20px',
                             height: '90%',
                             maxWidth: '500px'
                     }}/>
                 </Backdrop>
             </Card>
                         
-            <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+            <Typography sx={{ fontSize: 8, width: '80px' ,display: 'inline-block' }} variant="caption">
                 {props.title}
             </Typography>
         </Grid>

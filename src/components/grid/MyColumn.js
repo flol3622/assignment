@@ -5,7 +5,7 @@ import MyCard from './MyCard';
 
 function MyColumn(props) {
     return (
-        <Grid item sx={{width:'30%'}}>
+        <Grid item xs={3} sx={{}}>
             <Grid container spacing={2} alignItems='end' justifyContent="center" sx={{height: '100%'}}>
                 {posts.filter(posts => posts[props.filter] === props.title).map((post) => 
                     <MyCard 
