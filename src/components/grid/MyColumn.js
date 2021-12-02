@@ -3,8 +3,7 @@ import { Stack, Typography } from '@mui/material';
 import posts from './gridLayout';
 import MyCard from './MyCard';
 import { Box } from '@mui/system';
-
-   
+  
 function MyColumn(props) {
 
     var myWidth = 80 * props.breedte;

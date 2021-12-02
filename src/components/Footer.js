@@ -10,7 +10,7 @@ export default function Footer() {
   return (
     <Box 
         sx={{ 
-        width: '100vw', 
+        width: '100%', 
         position: 'absolute',
         top: '100vh',
         background: 'linear-gradient(347deg, rgba(34,193,195,0.5) 0%, rgba(253,187,45,0.5) 100%)',
