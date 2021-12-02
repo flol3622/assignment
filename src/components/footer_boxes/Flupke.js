@@ -5,6 +5,7 @@ import SvgIcon from '@mui/material/SvgIcon'
 
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
+import { Typography } from '@mui/material';
 
 export default function Flupke() {
   return (
@@ -14,7 +15,7 @@ export default function Flupke() {
         flexDirection: 'column',
         m: 5
         }}>
-        <h2>Flupke</h2>
+        <Typography variant='h5' pb='10px'>Flupke</Typography>
         <IconButton sx={{justifyContent: 'flex-start', p:0.5}} href="https://www.instagram.com/flupke_maker/" color="primary" aria-label="Instagram">
             <InstagramIcon />
         </IconButton>
@@ -49,12 +50,6 @@ export default function Flupke() {
             </SvgIcon>   
 
         </IconButton>
-            
-        
-
-
-
- 
       </Box>
   );
 }

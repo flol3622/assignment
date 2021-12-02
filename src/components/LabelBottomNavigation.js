@@ -1,10 +1,13 @@
 import * as React from 'react';
 import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
+
 import RestoreIcon from '@mui/icons-material/Restore';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import HomeIcon from '@mui/icons-material/Home';
+import CategoryOutlinedIcon from '@mui/icons-material/CategoryOutlined';
+
 import {Link as RouterLink} from 'react-router-dom';
 
 import FooterArrow from './FooterArrow';
@@ -30,9 +33,9 @@ export default function LabelBottomNavigation() {
       value={value} onChange={handleChange}>
 
       <BottomNavigationAction component={RouterLink} to="/"
-        label="Home" 
+        label="Categories" 
         value="home" 
-        icon={<HomeIcon/>} 
+        icon={<CategoryOutlinedIcon/>} 
       />
         <BottomNavigationAction component={RouterLink} to="/recent"
         label="Recents"

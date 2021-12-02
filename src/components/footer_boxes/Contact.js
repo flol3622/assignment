@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
+import { Typography } from '@mui/material';
 
 export default function Contact() {
   return (
@@ -9,11 +10,12 @@ export default function Contact() {
     flexDirection: 'column',
     m: 5,
     }}>
-    <h2>Contact</h2>
-    <p>Karel van Hultemstraat 11<br/>
+      <Typography variant='h5' pb='10px'>Contact</Typography>
+      <Typography variant='subtitle1'>
+        Karel van Hultemstraat 11<br/>
         9000 Gent<br/>
         +32 479 26 88 94
-    </p>
+      </Typography>
     </Box>
 
   );

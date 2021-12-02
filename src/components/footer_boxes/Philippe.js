@@ -5,6 +5,7 @@ import IconButton from '@mui/material/IconButton';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import { Typography } from '@mui/material';
 
 export default function Philippe(kleur) {
   return (
@@ -14,7 +15,8 @@ export default function Philippe(kleur) {
         flexDirection: 'column',
         m: 5
         }}>
-        <h2>Philippe</h2>
+        <Typography variant='h5' pb='10px'>Philippe</Typography>
+
         <IconButton sx={{justifyContent: 'flex-start', p:0.5}} href="https://www.instagram.com/soubrierphilippe/" color="primary" aria-label="Instagram">
             <InstagramIcon/>
         </IconButton>
