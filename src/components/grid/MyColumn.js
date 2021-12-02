@@ -1,12 +1,17 @@
 import React from 'react';
-import { Grid, Typography } from '@mui/material';
+import { Stack, Typography } from '@mui/material';
 import posts from './gridLayout';
 import MyCard from './MyCard';
+import { Box } from '@mui/system';
 
+   
 function MyColumn(props) {
+
+    var myWidth = 80 * props.breedte;
+
     return (
-        <Grid item xs={3} sx={{}}>
-            <Grid container spacing={2} alignItems='end' justifyContent="center" sx={{height: '100%'}}>
+        <Stack display='inline-block' width = {myWidth}>
+            <Box flexDirection='column-reverse' display='flex' flexWrap='wrap'sx={{height:700}}>
                 {posts.filter(posts => posts[props.filter] === props.title).map((post) => 
                     <MyCard 
                         thumbnail= {post.thumbnail} 
@@ -14,10 +19,12 @@ function MyColumn(props) {
                         link= {post.link}
                     />
                 )}       
-            </Grid>         
-            <Typography justifyContent="center"> {props.title}</Typography>                 
-        </Grid>
+            </Box>
+            <Box>
+                <Typography> {props.title}</Typography> 
+            </Box>
+        </Stack>
     );
   }
-  
+
   export default MyColumn;

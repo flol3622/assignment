@@ -1,5 +1,5 @@
 import React from 'react';
-import { Backdrop, Card, CardActionArea, CardMedia, Grid, Typography } from '@mui/material'
+import { Backdrop, Card, CardActionArea, CardMedia, Stack, Typography } from '@mui/material'
 
 function MyCard(props) {
 
@@ -13,12 +13,12 @@ function MyCard(props) {
   
 
     return (
-        <Grid item>
+        <Stack>
             <Card sx={{ height: 70, width: 70}} variant="outlined">
                 <CardActionArea onClick={handleToggle}>
                     <CardMedia
                         component="img"
-                        height="70"
+                        height="80"
                         image={props.thumbnail}
                         alt={props.thumbnail}
                     />
@@ -43,7 +43,7 @@ function MyCard(props) {
             <Typography sx={{ fontSize: 8, width: '80px' ,display: 'inline-block' }} variant="caption">
                 {props.title}
             </Typography>
-        </Grid>
+        </Stack>
     );
   }
   

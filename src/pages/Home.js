@@ -1,20 +1,18 @@
 import React from 'react';
-import Grid from '@mui/material/Grid';
 import MyColumn from '../components/grid/MyColumn';
+import { Stack } from '@mui/material';
 
 
 const Home = () => {
     return (
         <div>
-            <Grid container direction='row' spacing={2} justifyContent="center" sx={{position: 'absolute', bottom:80}}>
-                
+            <Stack direction="row" alignItems="end" justifyContent='center' spacing={1} sx={{position: 'absolute', bottom:80, left:20, right:20}}>
                 <MyColumn title='2017' filter='year'/>
                 <MyColumn title='2018' filter='year'/>
-                <MyColumn title='2019' filter='year'/>
-                <MyColumn title='2020' filter='year'/>
-                <MyColumn title='2021' filter='year'/>
-                <MyColumn title='2022' filter='year'/>
-            </Grid>
+                <MyColumn title='2019' filter='year' breedte='2'/>
+                <MyColumn title='2020' filter='year' breedte='3'/>
+                <MyColumn title='2021' filter='year' breedte='2'/>
+            </Stack>
         </div>
         
         
