@@ -10,10 +10,10 @@ function MyCard(props) {
         const handleToggle = () => {
         setOpen(!open);
         };
-
+  
     return (
         <Stack>
-            <Card sx={{ height: 70, width: 70, transition:'all 0.2s ease-in-out', '&:hover':{}}} variant="outlined">
+            <Card sx={{height: 70, width: 70, transition:'all 0.2s ease-in-out', opacity: 0.6, '&:hover':{ opacity: 1}}} variant="outlined">
                 <CardActionArea onClick={handleToggle}>
                     <CardMedia
                         component="img"

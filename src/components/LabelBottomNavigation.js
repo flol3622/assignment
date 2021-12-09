@@ -27,14 +27,16 @@ export default function LabelBottomNavigation() {
       sx={{ 
         position: 'absolute', 
         bottom: 10,
-        width:'100%'
+        width:'100%',
+        
     }}>
 
       <Typography variant='caption'>Flupke projects</Typography>
       <BottomNavigation
+        sx={{background: 'none'}}
         value={value}
         onChange={handleChange}
-        >
+      >
 
         <BottomNavigationAction component={RouterLink} to="/"
           label="Categories" 
