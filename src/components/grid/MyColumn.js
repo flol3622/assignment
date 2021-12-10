@@ -1,6 +1,6 @@
 import React from 'react';
 import { Stack, Typography } from '@mui/material';
-import posts from './gridLayout';
+import posts from './gridLayout.json';
 import MyCard from './MyCard';
 import { Box } from '@mui/system';
 
