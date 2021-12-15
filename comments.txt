@@ -1,0 +1,35 @@
+Mijn bedoeling was om een website te maken in de stijl van Bjarke Ingels-architects (www.big.dk)
+Waar alle projecten in één grid geplaatst zijn. En per pagina volgens verschillenden categorieën onderverdeeld worden.
+
+Daarbij komt er een Philippe en Flupke kant aan mijn website. Namelijk architectuur projecten en hobby projecten.
+Zo kan ik op mijn website zowel mijn persoonlijke als professionele projecten tonen.
++ ik heb al een databank met mijn hobby-projecten: Instagram.
+
+Data management:
+    De content is dus van Instagram (als je op een project klikt).
+        Deze wordt weergegeven adhv een iframe.
+    De content van de website zelf, de thumbnails bevinden zich in mijn pod.
+        Deze worden door react geselecteerd en weergeven adhv een link.
+    De server van de website bevat qua content enkel een JSON-file met metadata over de projecten.
+
+!! geen tijd gestoken in het verzamelen van mijn architectuur projecten, dus nog lege pagina’s op die kant van mijn website.
+
+Weergave/ lay-out:
+    Main information:
+        Elke pagina bevat een aantal MyColumn react componenten die ik aangemaakt heb.
+        Deze filteren de JSON-file, op zoek naar de opgegeven data:
+            vb.: kolom met jaartal = 2020
+        De MyColumn render dan MyCard componenten die naar de juiste date verwijzen.
+        Alles gebeurt dus automatisch op basis van de filter criteria.
+
+    Footer:
+        Door te scrollen of door te klikken op de middelste pijl (bottom navigation).
+        De footer bevat links naar al mijn sociale media’s, thigiverse, prusa research, LinkedIn, ...
+        Zeker bekijken ;-)
+        
+    Speed dial (top right):
+        Als laatste functionaliteit: de eerste knop van de speeddial verwijst naar een pagina om een nieuwe post aan te maken.
+        Bij het indienen van het formulier wordt de thumbnail naar mijn pod gestuurd. 
+        Door gebrek aan backend-processen om de JSON-file aan te vullen, kopieert het formulier het nodige object naar het klembord om die manueel in de JSON-file te kunnen plaatsen.
+         
+
